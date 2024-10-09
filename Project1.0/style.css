@@ -1,0 +1,399 @@
+ @font-face {
+    font-family: font;
+    src: url(Lato-BoldItalic.ttf);
+ }
+ .close{
+    display:none ;
+ }
+ body{
+    font-family: font;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ }
+ #background{
+    width: 100%;
+    height: 100vh;
+    margin: none;
+
+}
+
+#container{
+    transform: translateX(30px) translateY(100px);
+}
+#container input{
+    margin: 20px 30px ;
+    transform: translateX(-20px) translateY(-5px);
+    background-color: transparent;
+    border-color: white;
+    border: none;
+    outline: none;
+    font-size: 30px;
+
+}
+.show{
+    position: fixed;
+    top:50px;
+    right: 0;
+    left: 800px;
+    width: 400px;
+    height: 580px;
+    background-color:transparent;
+
+}
+
+#input1{
+ padding: 1px 1px;
+ width: 600px;
+ height: 70px;
+ border: 1px solid rgba(0, 0, 0, 0.142);
+ border-top-color: transparent;
+ border-right-color: transparent;
+ border-left-color: transparent;
+ margin: 30px 30px;
+ transition: 1s;
+}
+
+#input1:hover{
+border: 1px solid rgb(117, 244, 117);
+border-top-color: transparent;
+border-right-color: transparent;
+border-left-color: transparent;
+   
+}
+
+h1{
+   font-size: 20px;
+   transform: translateX(50px) translateY(-10px); 
+}
+ #box1{
+    background-color:rgb(117, 244, 117) ;
+    transform: translateY(100px) translateX(10px) ;
+    color: white;
+    width: 380px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px  0px  25px rgb(117, 244, 117);
+} 
+
+#box1 h1{
+    font-size: 50px;
+    font-weight:700;
+    text-align: center;
+    color: white;
+    transform: translateY(20px) translateX(10px);
+}
+#money{
+    background-color:rgb(117, 244, 117) ;
+    transform: translateY(100px) translateX(10px) ;
+    color: white;
+    width: 380px;
+    height: 100px;
+    border-radius: 8px;
+    box-shadow: 0px  0px  25px rgb(117, 244, 117);
+    transition: 1s;
+    cursor: pointer;
+}
+#money:hover{
+    scale:1.1;
+}
+#money h1{
+    font-size: 50px;
+    
+    
+
+}
+#resat{
+    display: none;
+    text-decoration: none;
+    transform: translateY(10px);
+}
+#resat a{
+    display: none;
+    text-decoration: none;
+
+}
+#money span{
+    font-size: 50px; 
+    transform: translateY(100px);   
+}
+#money h4{
+    font-size: 10px;
+    transform: translateX(60px) translateY(-40px);
+    animation: block 1s linear infinite;
+}
+@keyframes block {
+    from{scale:1px;}
+    to{scale:2px}
+}
+
+#caculation-btn button{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(117, 244, 117);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+
+}
+
+#caculation-btn #btn1{
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(117, 244, 117);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+#caculation-btn{
+    transform: translateX(30px) translateY(50px);
+}
+
+#alert{
+    transform: translateY(-60px) translateX(30px);
+    color: red;
+    font-size: 10px;
+}
+#caculation-btn button:hover{
+   scale:1.1;
+   box-shadow: 0px  0px  25px rgb(117, 244, 117);
+
+}
+#header{
+    width: 100%;
+    height: 50px;
+    background-color:white;
+    box-shadow: 0px  0px  3px black;
+    position: fixed;
+    top: 0;
+    right:0 ;
+    left: 0;
+    padding: 15px 15px;  
+}
+#header h1{
+    color:rgb(117, 244, 117) ;
+     font-size: 50px;
+     margin-top: 5px;
+}
+
+*[title]:hover::after{
+    content: attr(title);
+    position: absolute;
+    border: 1px solid rgb(117, 244, 117) ;
+    background-color: white;
+    color:rgb(117, 244, 117);
+    padding: 5px;
+    font-size:30px ;
+}
+#text{
+    
+    transform: translateY(20px);
+}
+
+#nav button{
+    display: none;
+    padding: 10px 10px; 
+    width: 50px;  
+    transform: translateX(1090px) translateY(-100px);
+    background-color:rgb(117, 244, 117);
+    color: white;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+   }
+
+    #nav_dot{
+    display: none;
+    position: relative;
+    z-index: 99;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-30px) translateX(240px);
+    border-radius: 50px;
+    
+   }
+
+  
+
+
+/* for mobile screeb*/
+ @media (max-width:320px) {
+    .close{
+        display: flex;
+        transform: translateX(200px) translatey(10px);
+        border-radius: 5px;
+        background-color:rgb(117, 244, 117);
+        border: none;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        font-size: 20px;
+    
+    }
+    
+    .close:hover{
+        box-shadow: 0px  0px  25px rgb(117, 244, 117);
+      
+    }
+
+
+
+
+    #nav{
+        transform: translateY(-10px) ;
+       }
+
+.nav_dot{
+    display: flex;
+    position: relative;
+    z-index: 99;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-40px) translateX(240px);
+    border-radius: 50px;
+
+    
+   }
+
+   #nav button:hover{
+    box-shadow: 0px  0px  3px rgb(117, 244, 117) ; ;
+    
+   }
+        #header h1{
+         font-size: 20px;
+         transform: translateY( 2px) translateX(20px);
+        
+       }
+
+       #header{
+        width: 100%;
+        height: 30px;
+        background-color:white;
+        box-shadow: 0px  0px  3px black;
+        position: fixed;
+        top: 0;
+        right:0 ;
+        left: 0;
+        padding: 15px 15px;  
+    }
+
+       #container{
+        transform: translateX(2px) translateY(60px);
+    }
+    #nav button{
+        display: flex;
+        transform: translateX(200px) translateY(-50px);
+       }
+
+
+       #input1{
+        padding: 1px 1px;
+        width: 210px;
+        height: 70px;
+        border: 1px solid rgba(0, 0, 0, 0.142);
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        margin: 30px 30px;
+        transition: 1s;
+       }
+
+       #caculation-btn{
+        width: 50px;
+        transform: translateX(40px) translateY(50px);
+    }
+    body{
+        position: fixed;
+    }
+    .show{
+        position: fixed;
+        top:0;
+        right: 0;
+
+        left: 0;
+        bottom: 0;
+        width: 400px;
+        height: 580px;
+        background-color:white;
+        transform: translateX(350px);
+        box-shadow: 0px  0px  3px black;
+    
+    }
+
+    #money{
+        
+        width: 232px;
+        height: 100px;
+        border-radius: 8px;
+       transform: translateY(20px) translateX(15px);
+        
+    }
+
+    #box1{
+        display: none;
+        background-color:rgb(117, 244, 117) ;
+        transform: translateY(50px) translateX(10px) ;
+        color: white;
+        width: 220px;
+        height: 100px;
+        border-radius: 8px;
+        box-shadow: 0px  0px  25px rgb(117, 244, 117);
+ }
+    
+ .open{
+    transform: translateX(50px);
+    transition: 1s;
+}
+.close1{
+    transform: translateX(350px);
+    transition: 1s;  
+}
+.navdot{
+    visibility: hidden;
+
+}
+/*visibliy of the dot nav when it is clicked*/
+
+.active2{
+    background-color: red;
+}
+#text{
+    
+    transform: translateY(20px) translateX(-40px);
+}
+
+
+#caculation-btn button{
+    width: 200px;
+    transform: translateY(-55px);
+}
+#resat{
+    display: flex;
+    transform: translateY(10px) translateX(10px);
+}
+#resat a{
+    text-decoration: underline;
+    display: flex;
+    
+       
+}
+}
+
+
+
+
+
+
+ 

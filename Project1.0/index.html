@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+ <div id="background">
+  <div id="header">
+    <nav>
+    <h1>LoanCalc$</h1>
+    <div id="nav">
+      <div class="nav_dot"></div>
+      <button class="btn">Veiw</button>
+    </div>
+
+  
+  </div>
+</nav>
+    <div id="container">
+     
+      <div id="input1">
+        <legend>Loan Amount</legend>
+        <input type="number"  id ="loanamount" required title="Enter your Loan Amount">
+      </div>  
+
+      <div id="input1">
+        <legend>Interest Rate</legend>
+        <input type="number" id ="interestrate" required>
+      </div>  
+
+
+      <div id="input1">
+        <legend>Payment Term (year)</legend>
+        <input  type="number" id ="range" required>
+      </div>  
+
+    
+      <div id="caculation-btn">
+        <button id="btn">Calculate</button>
+        <div id="resat">
+          <a href="index.html">Resat</a>
+        </div>
+        
+      </div> 
+      <p id="alert"></p>
+      
+       
+
+      
+
+    </div>
+    <div>
+    <div class="show">
+      <button class="close">x</button>
+      <div id="box1">
+        <h1>Total Pay</h1>
+
+      </div>
+      <div id="money">
+        <div id="text">
+        <span><h1 id="TotalAmount">$0</br></h1></h1></span>
+        
+        <h4>Interest included</h4>
+      </div>
+
+      </div>
+      
+
+    </div>
+  </div>
+ </div>   
+ <script src="app.js"></script>
+</body>
+</html>
